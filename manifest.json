@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Search",
+  "version": "1.8.2",
+  "description": "Quick Search is a browser extension that allows users to quickly navigate to their favorite websites using predefined shortcuts.",
+  "permissions": ["tabs", "storage"],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "omnibox": {
+    "keyword": "qq"
+  },
+  "action": {
+    "default_popup": "html/popup.html",
+    "default_icon": {
+      "16": "icon/icon.png",
+      "48": "icon/icon.png",
+      "128": "icon/icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon/icon.png",
+    "48": "icon/icon.png",
+    "128": "icon/icon.png"
+  },
+  "options_page": "html/options.html"
+}

@@ -1,0 +1,131 @@
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(206,247,255,1) 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#popmain {
+    width: 250px;
+    height: 360px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+#logo {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 10px auto;
+}
+
+#openSettings {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+#openSettings:hover {
+    transform: rotate(90deg);
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin: 1px 0 5px;
+}
+h2 {
+    font-size: 16px;
+    color: #333;
+    margin: 1px 0 5px;
+}
+
+#githubLink {
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+#gh_btn{
+    background-color: transparent;
+    border: none;
+}
+#githubLink:hover{
+    transform: scale(1.1); 
+    filter: brightness(1.5); 
+}
+#version {
+    font-size: 0.8em;
+    color: #666;
+    position: relative;
+    margin-top: 60px;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+.switch {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    margin: 0 auto;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    float: right;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff0000;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    float: right;
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}

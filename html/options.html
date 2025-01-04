@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Search - Ustawienia</title>
+    <link rel="stylesheet" href="../css/style_opt.css">
+</head>
+<body>
+    <header>
+        <div><img src="../icon/icon.png" id="logo" alt="Logo"></div>
+        <h1>Quick Search</h1>
+        <div id="header-links">
+            <button id="gh_btn"><img src="../icon/github.png" id="githubLink"></button>
+            <button id="mail_btn">
+                <img src="../icon/contact.png" id="contactLink" alt="Contact">
+            </button>
+        </div>
+        <div id="author"><h2>by budziun</h2></div>
+    </header>
+
+    <main>
+        <div>
+            <section id="active-shortcuts">
+                <h3>Active Shortcuts</h3>
+                <div id="defaultShortcutsToggle"></div>
+                <ul></ul>
+                <button id="resetDefaults">Restore defaults shortcut!</button>
+            </section>
+            <section id="add-shortcut">
+                <h3>Add new</h3>
+                <form autocomplete="off">
+                    <label for="shortcut">Name:</label>
+                    <input type="text" id="shortcut" placeholder="e.g. yt (max 6 letters)" maxlength="6" required>
+                    <label for="url">URL:</label>
+                    <input type="url" id="url" placeholder="https://example.com" required>
+                    <button type="submit" class='button_opt'>Add</button>
+                </form>
+            </section>
+        </div>
+        <div id="part2">
+            <section id="info">
+                <h3>How to use the extension?</h3>
+                <div class="usage-instructions">
+                    <h4>Shortcut to a page:</h4>
+                    <div class="step">
+                        <p>1. Launch the extension by typing <code>qq</code> in the address bar and pressing <code>space</code>.</p>
+                    </div>
+                    <div class="step">
+                        <p>2. Type the shortcut name and press <code>Enter</code>.</p>
+                    </div>
+            
+                    <h4>Search using a shortcut: <a class="only">(only pre-built shortcut support)</a></h4>
+                    
+                    <div class="step">
+                        <p>1. Launch the extension by typing <code>qq</code> in the address bar and pressing <code>space</code>.</p>
+                    </div>
+                    <div class="step">
+                        <p>2. Type <code>!shortcut_name</code>.</p>
+                    </div>
+                    <div class="step">
+                        <p>3. Type your search query and press <code>Enter</code>.</p>
+                    </div>
+                    <div id="enjoy">
+                    <p >Enjoy using the extension!</p>
+                    </div>
+                </div>
+            </section>
+</section>
+        </div>
+    </main>
+    <footer>
+        <div id="version">v</div>
+    </footer>
+    <script src="../js/options.js"></script>
+</body>
+</html>

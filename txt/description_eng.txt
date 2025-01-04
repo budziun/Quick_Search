@@ -1,0 +1,14 @@
+Quick Search is a browser extension that allows users to quickly navigate to their favorite websites using predefined shortcuts. It saves time and makes everyday browsing more convenient.
+
+How does it work?
+
+Redirecting to a website using shortcuts:
+
+Type the activation shortcut (e.g., qq) into the browser's search bar and press space.
+Enter the predefined website shortcut (e.g., yt for YouTube) and press Enter.
+Searching with shortcuts:
+
+Type the activation shortcut (e.g., qq) and press space.
+Use the search mode by entering !shortcut (e.g., !yt) followed by the search phrase.
+Press Enter to go to the search results.
+Users can also add new shortcuts and manage existing ones through the settings panel.
